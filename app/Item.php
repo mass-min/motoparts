@@ -17,4 +17,12 @@ class Item extends Model
     {
         return $this->hasMany('App\Order');
     }
+
+    /**
+     * @return HasMany
+     */
+    public function images()
+    {
+        return $this->hasMany('App\ItemImage');
+    }
 }
